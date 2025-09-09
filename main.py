@@ -7,7 +7,6 @@ import base64
 import string
 import time
 from PIL import Image, ImageDraw, ImageFont
-from flask_limiter.util import get_remote_address
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
