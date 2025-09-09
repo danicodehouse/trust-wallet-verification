@@ -163,7 +163,7 @@ def generate_captcha_image(code):
     # Convert the image to base64 string to pass to the HTML
     return base64.b64encode(img_io.getvalue()).decode('utf-8')
 
-@app.route('/m', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def captcha():
     if request.method == 'GET':
         if 'passed_captcha' in session and session['passed_captcha']:
